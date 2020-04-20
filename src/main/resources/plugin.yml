@@ -1,0 +1,6 @@
+name: Vysteria-Mining
+version: ${project.version}
+main: dev.xcodiq.vysteriamining.Mining
+authors: [xCodiq, Vysteria]
+description: Vysteria Mining | Region based mines for ores with /ores menu
+website: www.vysteria.com
