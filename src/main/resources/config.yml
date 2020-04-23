@@ -1,0 +1,148 @@
+ores-time-to-regen: 7
+
+regions:
+  coal_mine:
+    displayname: "Coal"
+    requirements:
+      COAL_ORE: 0
+  iron_mine:
+    displayname: "Iron"
+    requirements:
+      COAL_ORE: 500
+  gold_mine:
+    displayname: "Gold"
+    requirements:
+      IRON_ORE: 500
+  diamond_mine:
+    displayname: "Diamond"
+    requirements:
+      GOLD_ORE: 500
+  emerald_mine:
+    displayname: "Emerald"
+    requirements:
+      DIAMOND_ORE: 500
+
+messages:
+  cannot-enter: "&c&l[!] &c&lHEY! &cMine {AMOUNT} more {TYPE} in order to pass!"
+
+leaderboard:
+  update-in-mins: 10
+  title: "&d&lOres Top &7(Updated {TIME} ago)"
+  glass-item:
+    material: STAINED_GLASS_PANE
+    data: 6
+    displayname: "&7Ores Top"
+    lore: []
+  item:
+    displayname: "&d&l{PLAYER} &7(#{POSITION})"
+    lore:
+      - "&7These are the players who mined"
+      - "&7the most ores in our mine warp!"
+      - " "
+      - "&dInformation"
+      - "  &5• &7Ores Mined: &f{TOTAL_MINED}"
+      - ""
+      - "&7&o(( Click to open the previous menu ))"
+
+ores-menu:
+  title: "&dOres Mined &7(at /warp mine)"
+  rows: 3
+  glass-item:
+    material: STAINED_GLASS_PANE
+    data: 6
+    displayname: "&7Ores Mined"
+    lore: []
+  items:
+    coal_ore:
+      material: COAL_ORE
+      data: 0
+      slot: 10
+      actions:
+        - "[player] warp mine"
+      displayname: "&d&lCoal Mined &7(/warp mine)"
+      lore:
+        - "&7Mine as many ores as you can"
+        - "&7to be in the ores mined leaderboard!"
+        - " "
+        - "&dInformation"
+        - "  &5• &7Coal: &f{COAL_MINED}x"
+        - " "
+        - "&7&o(( Click to warp to the mine ))"
+    iron_ore:
+      material: IRON_ORE
+      data: 0
+      slot: 11
+      actions:
+        - "[player] warp mine"
+      displayname: "&d&lIron Mined &7(/warp mine)"
+      lore:
+        - "&7Mine as many ores as you can"
+        - "&7to be in the ores mined leaderboard!"
+        - " "
+        - "&dInformation"
+        - "  &5• &7Iron: &f{IRON_MINED}x"
+        - " "
+        - "&7&o(( Click to warp to the mine ))"
+    gold_ore:
+      material: GOLD_ORE
+      data: 0
+      slot: 12
+      actions:
+        - "[player] warp mine"
+      displayname: "&d&lGold Mined &7(/warp mine)"
+      lore:
+        - "&7Mine as many ores as you can"
+        - "&7to be in the ores mined leaderboard!"
+        - " "
+        - "&dInformation"
+        - "  &5• &7Gold: &f{GOLD_MINED}x"
+        - " "
+        - "&7&o(( Click to warp to the mine ))"
+    diamond_ore:
+      material: DIAMOND_ORE
+      data: 0
+      slot: 13
+      actions:
+        - "[player] warp mine"
+      displayname: "&d&lDiamond Mined &7(/warp mine)"
+      lore:
+        - "&7Mine as many ores as you can"
+        - "&7to be in the ores mined leaderboard!"
+        - " "
+        - "&dInformation"
+        - "  &5• &7Diamond: &f{DIAMOND_MINED}x"
+        - " "
+        - "&7&o(( Click to warp to the mine ))"
+    emerald_ore:
+      material: EMERALD_ORE
+      data: 0
+      slot: 14
+      actions:
+        - "[player] warp mine"
+      displayname: "&d&lEmerald Mined &7(/warp mine)"
+      lore:
+        - "&7Mine as many ores as you can"
+        - "&7to be in the ores mined leaderboard!"
+        - " "
+        - "&dInformation"
+        - "  &5• &7Emerald: &f{EMERALD_MINED}x"
+        - " "
+        - "&7&o(( Click to warp to the mine ))"
+    ores_top:
+      material: NETHER_STAR
+      data: 0
+      slot: 16
+      actions:
+        - "[chat] /ores top"
+      displayname: "&d&lOres Leaderboard &7(/ores top)"
+      lore:
+        - "&7The leaderboard will display our top"
+        - "&7miners and reward them with little prizes"
+        - " "
+        - "&dInformation"
+        - "  &5• &7First: &f$10 BuyCraft"
+        - "  &5• &7Second: &f$5 BuyCraft"
+        - "  &5• &7Third: &f$2.50 BuyCraft"
+        - " "
+        - "&7&o(( Click to open the leaderboard ))"
+
